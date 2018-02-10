@@ -1,0 +1,17 @@
+{
+    "name": "luewell/luewell",
+    "description": "Luewell is an open-source, high-performance web, RESTful API framework for the Go programming language.",
+    "keywords": ["framework", "luewell", "go", "golang"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "go": ">=1.9",
+        "luewell/framework": "~1.0",
+        "luewell/eloquent": "~1.0"
+    },
+    "config": {
+        "server": {
+            "port": 3000
+        }
+    }
+}
