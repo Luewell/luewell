@@ -1,9 +1,7 @@
 package routes
 
-import (
-	"fmt"
-)
+import "github.com/luewell/framework/Illuminate/Http"
 
-func Web() {
-	fmt.Print("Load Routes Web")
+func init() {
+	Http.GET("/")
 }
