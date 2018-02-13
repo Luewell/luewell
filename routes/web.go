@@ -5,7 +5,7 @@ import (
 )
 
 func Web(http *Http.Router) {
-	http.Get("", func(ctx *Http.Context) {
+	/*http.Get("/", func(ctx *Http.Context) {
 
-	})
+	})*/
 }
