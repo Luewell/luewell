@@ -1,10 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
+	"github.com/luewell/framework/Illuminate/Http"
 	"github.com/luewell/framework/bootstrap"
+	"github.com/luewell/luewell/routes"
 )
 
 func init() {
@@ -12,5 +13,11 @@ func init() {
 }
 
 func main() {
-	fmt.Println(os.Environ())
+
+	/* RouteServiceProvider */
+	http := Http.Init()
+
+	routes.Web(http)
+
+	http.Listen(os.Getenv("APP_URL"))
 }
